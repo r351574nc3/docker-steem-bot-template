@@ -1,14 +1,19 @@
 const express = require('express')
-const steem = require('steem')
+const bot = require('./helpers/bot')
 
 var app = express()
 
+// Main page
 app.get('/', function (req, res) {
-  res.send('hello world')
+  res.render('index')
 })
 
+// Check on whether the bot is functioning
 app.get('/healthcheck', function (req, res) {
-    res.send('hello world')
-  })
+    res.send("I'm ok")
+})
+
+// Actual Bot Execution
+bot.run()
   
 app.listen(3000, () => console.log('Example app listening on port 3000!'))

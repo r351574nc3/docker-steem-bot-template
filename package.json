@@ -2,9 +2,9 @@
   "name": "steem-bot",
   "version": "1.0.0",
   "description": "Template for steem bots",
-  "main": "index.js",
+  "main": "app/index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node app/index.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,9 @@
   "author": "Leo Przybylski",
   "license": "MIT",
   "dependencies": {
+    "bluebird": "^3.5.1",
     "express": "^4.16.2",
+    "node-schedule": "^1.3.0",
     "steem": "^0.7.1"
   }
 }
