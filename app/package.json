@@ -1,0 +1,24 @@
+{
+  "name": "steem-bot",
+  "version": "1.0.0",
+  "description": "Template for steem bots",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/r351574nc3/docker-steem-bot-template"
+  },
+  "keywords": [
+    "steem",
+    "docker",
+    "bot"
+  ],
+  "author": "Leo Przybylski",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.2",
+    "steem": "^0.7.1"
+  }
+}
