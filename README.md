@@ -48,7 +48,6 @@ success Installed "sao@0.22.12" with binaries:
 To use this template with SAO simply run
 
 ```
-```
 ~/s/g/r/steem-digest-example git:master ❯❯❯ sao r351574nc3/docker-steem-bot-template
 warning Config file was not found, we simply copy it to dest folder!
 success Done, let the hacking begin!
