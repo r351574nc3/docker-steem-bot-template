@@ -1,7 +1,8 @@
 'use strict'
 
-const steem = require('steem')
 const Promise = require('bluebird')
+const steem = Promise.promisifyAll(require('steem'))
+const config = require('../../config')
 
 
 module.exports = {
@@ -9,7 +10,7 @@ module.exports = {
 }
 
 function execute() {
-    steem.api.getAccounts(['r351574nc3'], function(err, result) {
+    steem.api.getAccounts([config.user], function(err, result) {
         console.log(err, result);
       });
 }
